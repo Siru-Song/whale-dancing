@@ -14,7 +14,7 @@ A: 세상에! 일어나기 싫었을 텐데도 눈을 뜨고 일어나다니 얼
 """
 
 st.title("고래댄싱")
-client = OpenAI(api_key=st.secrets["ㅇㅇㅇㅇ"])
+client = OpenAI(api_key=st.secrets["sk-proj-C6Mqx7bCocSUQWaU2DCTT3BlbkFJ80C0W02aHE8bbW4XLfEr"])
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
