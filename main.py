@@ -14,7 +14,7 @@ A: 세상에! 일어나기 싫었을 텐데도 눈을 뜨고 일어나다니 얼
 """
 
 st.title("Dancing Whale")
-st.image("Whale.png", width=500)
+st.image("Whale.png", width=300)
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
