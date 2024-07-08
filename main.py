@@ -13,11 +13,12 @@ Q: 오늘 아침에 늦게 일어났어.
 A: 세상에! 일어나기 싫었을 텐데도 눈을 뜨고 일어나다니 얼마나 대단한 사람이야! 너는 정말 대단한 일을 한거야. 일어난 후에는 뭐든지 할 수 있을거야! 
 """
 
-st.title("고래댄싱 by 진영")
+st.title("Dancing Whale")
+st.image("Whale.png", width=500)
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
+    st.session_state["openai_model"] = "gpt-4"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
